@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">     
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Healthy Food</title>
 </head>
+
 <body>
     <section id="header">
         <a href="#"><img src="img/BMW_logo_(gray).svg.png" class="logo" alt=""></a>
@@ -21,7 +23,57 @@
         </div>
     </section>
 
+    <section id="Content">
+        <h1 class="Diet_Text">Get your diet Plan</h1>
+        <div class="Big_Container">
+            <div class="Container">
+
+                <div class="Calories_text">
+                    <h1>I want to eat</h1>
+                    <h1>in</h1>
+                </div>
+
+                <div class="Calories_input">
+
+                    <input type="number" min="0" max="20000" step="100" placeholder="####" value=""
+                        class="form-control calorie-input text-md-right" id="cal_input">
+
+                    <select class="form-control num_meals_selector" id="num_meals_selector">
+                        <option value="1">1 meal
+                        </option>
+                        <option value="2">2 meals
+                        </option>
+                        <option value="3">3 meals
+                        </option>
+                        <option value="4" selected="">4 meals
+                        </option>
+                        <option value="5">5 meals
+                        </option>
+                        <option value="6">6 meals
+                        </option>
+                        <option value="7">7 meals
+                        </option>
+                        <option value="8">8 meals
+                        </option>
+                        <option value="9">9 meals
+                        </option>
+                    </select>
+                </div>
+
+
+                
+            </div>
+            
+            <button type="button" class="Generate" data-loading-text="Generate" onclick="window.location.href = 'Diet_Plan.html';">
+                Generate
+            </button>
+        </div>
+
+
+    </section>
+
 
     <link rel="stylesheet" href="script.js">
 </body>
+
 </html>
